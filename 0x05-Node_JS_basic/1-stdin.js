@@ -5,7 +5,7 @@ process.stdin.setEncoding('utf8');
 process.stdin.on('readable', () => {
   const data = process.stdin.read();
   if (data != null) { 
-    process.stdout.write(`Yourname is: ${data.toString().trim()}\n`);
+    process.stdout.write(`Your name is: ${data.toString().trim()}\n`);
     process.exit();
   }
 });
